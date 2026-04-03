@@ -1,16 +1,39 @@
 .home-container {
   display: flex;
-  justify-content: space-between;
-  /* border: 1px solid black; */
-  gap: 20px;
+  gap: 24px;
+  padding: 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .profile-section {
-  flex: 0 0 30%; /* fixed width sidebar */
-  border: 1px solid black
+  flex: 0 0 30%;
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
 }
 
 .widget-section {
-  flex: 1; /* take remaining space */
+  flex: 1;
   border: 1px solid black;
+}
+
+/* ── Mobile: stack vertically ── */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .profile-section {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .widget-section {
+    width: 100%;
+  }
 }

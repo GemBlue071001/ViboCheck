@@ -17,7 +17,7 @@ function App() {
     <>
       <h1>vibocheck</h1>
       <div className='home-container'>
-          
+
         <div className='profile-section'>
           <h1>profile</h1>
         </div>
