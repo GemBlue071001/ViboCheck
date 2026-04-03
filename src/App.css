@@ -1,0 +1,16 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  gap: 20px;
+}
+
+.profile-section {
+  flex: 0 0 30%; /* fixed width sidebar */
+  border: 1px solid black
+}
+
+.widget-section {
+  flex: 1; /* take remaining space */
+  border: 1px solid black;
+}
